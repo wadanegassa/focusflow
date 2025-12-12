@@ -117,11 +117,11 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                               width: isTablet ? 180 : 140,
                               height: isTablet ? 180 : 140,
                               decoration: BoxDecoration(
-                                color: _onboardingData[index]['iconColor'].withOpacity(0.1),
+                                color: _onboardingData[index]['iconColor'].withAlpha(26),
                                 borderRadius: BorderRadius.circular(isTablet ? 90 : 70),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: _onboardingData[index]['iconColor'].withOpacity(0.2),
+                                    color: _onboardingData[index]['iconColor'].withAlpha(51),
                                     spreadRadius: 0,
                                     blurRadius: 20,
                                     offset: const Offset(0, 8),

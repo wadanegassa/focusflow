@@ -147,7 +147,7 @@ class _AddEditTaskScreenState extends State<AddEditTaskScreen> {
                         });
                       }
                     },
-                    selectedColor: _getPriorityColor(priority).withOpacity(0.2),
+                    selectedColor: _getPriorityColor(priority).withAlpha(51),
                     labelStyle: TextStyle(
                       color: _selectedPriority == priority 
                           ? _getPriorityColor(priority) 

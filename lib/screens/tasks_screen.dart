@@ -170,7 +170,7 @@ class _TasksScreenState extends State<TasksScreen>
       label: Text(label),
       selected: isSelected,
       onSelected: (_) => onTap(),
-      selectedColor: Colors.blue.withOpacity(0.2),
+      selectedColor: Colors.blue.withAlpha(51),
       checkmarkColor: Colors.blue,
     );
   }
@@ -213,7 +213,7 @@ class _TasksScreenState extends State<TasksScreen>
             width: 40,
             height: 40,
             decoration: BoxDecoration(
-              color: _getStatusColor(task.status).withOpacity(0.1),
+              color: _getStatusColor(task.status).withAlpha(26),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(
@@ -324,7 +324,7 @@ class _TasksScreenState extends State<TasksScreen>
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: _getPriorityColor(priority).withOpacity(0.1),
+        color: _getPriorityColor(priority).withAlpha(26),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(
@@ -342,7 +342,7 @@ class _TasksScreenState extends State<TasksScreen>
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: Colors.blue.withOpacity(0.1),
+        color: Colors.blue.withAlpha(26),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(
@@ -365,10 +365,10 @@ class _TasksScreenState extends State<TasksScreen>
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
         color: isOverdue
-            ? Colors.red.withOpacity(0.1)
+            ? Colors.red.withAlpha(26)
             : isToday
-            ? Colors.orange.withOpacity(0.1)
-            : Colors.grey.withOpacity(0.1),
+            ? Colors.orange.withAlpha(26)
+            : Colors.grey.withAlpha(26),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(

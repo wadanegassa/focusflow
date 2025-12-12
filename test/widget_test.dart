@@ -9,8 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:task/app.dart';
 
-import 'package:task/main.dart';
-import 'package:task/route.dart';
+// Removed unused imports: main.dart and route.dart
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

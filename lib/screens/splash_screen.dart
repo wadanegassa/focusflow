@@ -49,6 +49,7 @@ class _SplashScreenState extends State<SplashScreen>
     });
 
     Future.delayed(const Duration(seconds: 5), () {
+      if (!mounted) return;
       Navigator.pushReplacementNamed(context, Routes.onboarding);
     });
   }
@@ -91,7 +92,7 @@ class _SplashScreenState extends State<SplashScreen>
                         color: Colors.blue,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.blue.withOpacity(0.3),
+                            color: Colors.blue.withAlpha(77),
                             spreadRadius: 0,
                             blurRadius: 20,
                             offset: const Offset(0, 8),

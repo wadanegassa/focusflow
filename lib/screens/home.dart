@@ -111,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.blue.withOpacity(0.3),
+                            color: Colors.blue.withAlpha(77),
                             spreadRadius: 0,
                             blurRadius: 15,
                             offset: const Offset(0, 8),
@@ -148,9 +148,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   SizedBox(height: isTablet ? 8 : 6),
                                   LinearProgressIndicator(
                                     value: taskService.completionPercentage,
-                                    backgroundColor: Colors.white.withOpacity(
-                                      0.3,
-                                    ),
+                                    backgroundColor: Colors.white.withAlpha(77),
                                     valueColor:
                                         const AlwaysStoppedAnimation<Color>(
                                           Colors.white,
@@ -162,7 +160,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2),
+                                color: Colors.white.withAlpha(51),
                                 borderRadius: BorderRadius.circular(15),
                               ),
                               height: isTablet ? 70 : 60,
@@ -398,7 +396,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: color.withOpacity(0.1),
+                color: color.withAlpha(26),
                 borderRadius: BorderRadius.circular(12),
               ),
               height: isTablet ? 50 : 40,
@@ -450,7 +448,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             onTap: () => taskService.toggleTaskStatus(task.id),
             child: Container(
               decoration: BoxDecoration(
-                color: _getStatusColor(task.status).withOpacity(0.1),
+                color: _getStatusColor(task.status).withAlpha(26),
                 borderRadius: BorderRadius.circular(8),
               ),
               height: isTablet ? 40 : 35,
